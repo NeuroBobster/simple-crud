@@ -15,3 +15,4 @@ build/
 
 .env
 pytania.txt
+simple-crud.db

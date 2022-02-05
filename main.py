@@ -1,4 +1,4 @@
-import http
+import uvicorn
 from fastapi import FastAPI, status, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
@@ -7,7 +7,6 @@ from typing import List
 import db
 from db import MySession
 import schemas
-# from typing import Optional
 
 
 app = FastAPI()
@@ -74,3 +73,4 @@ def delete_user(id: int):
         else:
             raise HTTPException(status_code=404, detail=f"User with id {id} not found")
     return None
+

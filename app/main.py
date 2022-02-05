@@ -4,9 +4,9 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 from typing import List
 
-import db
-from db import MySession
-import schemas
+import app.db as db
+from app.db import MySession
+import app.schemas as schemas
 
 
 app = FastAPI()

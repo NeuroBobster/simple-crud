@@ -14,5 +14,7 @@ build/
 *.egg-info/
 
 .env
+.vscode/
+
 pytania.txt
 simple-crud.db

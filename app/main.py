@@ -1,6 +1,4 @@
-import uvicorn
 from fastapi import FastAPI, status, HTTPException
-from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 from typing import List
 

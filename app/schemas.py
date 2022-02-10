@@ -1,22 +1,22 @@
-from pydantic import BaseModel
-from typing import Union
+from pydantic import BaseModel, EmailStr
+from typing import Optional
 
 
 # Create User Base Model
 class UserCreate(BaseModel):
     name: str
-    email: str
+    email: EmailStr
 
 
 class UserUpdate(BaseModel):
-    name: Union[str, None]
-    email: Union[str, None]
+    name: Optional[str] = None
+    email: Optional[EmailStr] = None
 
 
 class User(BaseModel):
     id: int
     name: str
-    email: str
+    email: EmailStr
 
     class Config:
         orm_mode = True

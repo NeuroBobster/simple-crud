@@ -17,4 +17,6 @@ build/
 .vscode/
 
 pytania.txt
-simple-crud.db
+*.db
+
+.coveragerc
